@@ -1,0 +1,55 @@
+{% set name = "OpenMS" %}
+{% set version = "2.1.0" %}
+package:
+  name: {{ name|lower  }}
+  version: {{ version  }}
+
+source:
+  fn: OpenMS-{{ version }}_src_contrib_doc.tar.gz
+  url: https://github.com/OpenMS/OpenMS/releases/download/Release{{ version }}/OpenMS-{{ version }}_src_doc_contrib.tar.gz
+  
+build:
+    number: 0
+    skip: True  # [osx]
+
+requirements:
+  build:
+    - gcc    # [linux]
+    - llvm   # [osx]
+    - cmake
+    - autoconf
+    - automake
+    - python
+    - zlib
+    - libtool
+    - xerces-c
+    - gsl
+    - boost  >=1.62.0
+    - eigen
+    - glpk  >=4.60
+    - bzip2
+    - qt
+    - libsvm >=3.21
+    - seqan-library ==1.4.2
+    - coinmp
+  run:
+    - python
+    - zlib
+    - xerces-c
+    - gsl
+    - boost  >=1.62.0
+    - eigen
+    - glpk  >=4.60
+    - bzip2
+    - qt
+    - libsvm >=3.21
+    - coinmp
+
+test:
+  commands:
+    - FileMerger --help
+
+about:
+  home: https://github.com/OpenMS/OpenMS
+  license: BSD
+  summary: OpenMS is an open-source software C++ library for LC-MS data management and analyses
