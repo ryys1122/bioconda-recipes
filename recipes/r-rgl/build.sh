@@ -6,6 +6,10 @@ grep -v '^Priority: ' DESCRIPTION.old > DESCRIPTION
 
 $R CMD INSTALL --build .
 
+cp /usr/lib64/libGL.so $PREFIX/lib
+ln -s $PREFIX/lib/libGL.so $PREFIX/lib/libGL.so.1.2.0
+ln -s $PREFIX/lib/libGL.so $PREFIX/lib/libGL.so.1
+
 # Add more build steps here, if they are necessary.
 
 # See
