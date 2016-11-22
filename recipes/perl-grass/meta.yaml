@@ -25,6 +25,7 @@ requirements:
     - perl-encode-locale
     - perl-lwp-simple
     - perl-xml-parser
+    - perl-bio-db-hts
   run:
     - perl-threaded
     - perl-ipc-system-simple
@@ -33,10 +34,11 @@ requirements:
     - perl-bio-samtools
     - perl-gd
     - perl-sanger-cgp-vcf
+    - perl-bio-db-hts
 
-#test:
-#  commands:
-#    - grass.pl --help
+test:
+  commands:
+    - grass.pl --help
 
 about:
   home: https://github.com/cancerit/grass

@@ -21,6 +21,12 @@ requirements:
     - perl-grass
     - cansam
     - boost
+    - perl-extutils-makemaker
+    - perl-app-cpanminus
+    - perl-math-combinatorics
+    - perl-bioperl-core
+    - perl-bio-db-hts
+    - perl-bio-featureio
 
   run:
     - libgcc
@@ -31,7 +37,12 @@ requirements:
     - cansam
     - perl-pcap
     - perl-grass
+    - perl-math-combinatorics
+    - perl-bioperl-core
+    - perl-bio-db-hts
+    - perl-bio-featureio
 
 test:
   commands:
     - brass-group --help
+    - brass.pl --help
