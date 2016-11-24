@@ -8,8 +8,8 @@ $R CMD INSTALL --build .
 
 cp /usr/lib64/libGL.so $PREFIX/lib
 cd $PREFIX/lib
-ln -s ./libGL.so ./libGL.so.1.2.0
-ln -s ./libGL.so ./libGL.so.1
+cp /usr/lib64/libGL.so $PREFIX/lib/libGL.so.1.2.0
+cp /usr/lib64/libGL.so $PREFIX/lib/libGL.so.1
 
 
 # Add more build steps here, if they are necessary.
