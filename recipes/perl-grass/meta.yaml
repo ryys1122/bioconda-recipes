@@ -1,15 +1,15 @@
 package:
   name: perl-grass
-  version: '1.1.6'
+  version: '2.1.0'
 
 build:
-  number: 3
+  number: 4
   skip: True # [osx]
 
 source:
-  fn: v1.1.6.tar.gz
-  url: https://github.com/cancerit/grass/archive/v1.1.6.tar.gz
-  md5: 81acae11f5687d070166cda26f069de3
+  fn: v2.1.0.tar.gz
+  url: https://github.com/cancerit/grass/archive/v2.1.0.tar.gz
+  md5: 3c3ed0f36a2f35b8aa4eb3428f34df26
 
 requirements:
   build:
@@ -26,6 +26,7 @@ requirements:
     - perl-lwp-simple
     - perl-xml-parser
     - perl-bio-db-hts
+    - perl-sanger-cgp-vagrent
   run:
     - perl-threaded
     - perl-ipc-system-simple
@@ -35,6 +36,7 @@ requirements:
     - perl-gd
     - perl-sanger-cgp-vcf
     - perl-bio-db-hts
+    - perl-sanger-cgp-vagrent
 
 test:
   commands:
