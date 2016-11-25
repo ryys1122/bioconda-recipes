@@ -25,6 +25,8 @@ requirements:
     - perl-app-cpanminus
     - perl-math-combinatorics
     - perl-bioperl-core
+    - perl-file-sharedir
+    - perl-file-sharedir-install
     - perl-bio-db-hts
     - perl-bio-featureio
 
@@ -39,6 +41,8 @@ requirements:
     - perl-grass
     - perl-math-combinatorics
     - perl-bioperl-core
+    - perl-file-sharedir
+    - perl-file-sharedir-install
     - perl-bio-db-hts
     - perl-bio-featureio
 
