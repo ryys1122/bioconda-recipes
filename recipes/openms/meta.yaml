@@ -7,6 +7,7 @@ package:
 source:
   fn: OpenMS-{{ version }}_src_contrib_doc.tar.gz
   url: https://github.com/OpenMS/OpenMS/releases/download/Release{{ version }}/OpenMS-{{ version }}_src_doc_contrib.tar.gz
+  sha256: 36765c3a4c7a3277d71b9278505bd32f26c7030ffa6681a76344ca0024edf6a2
   
 build:
     number: 0
