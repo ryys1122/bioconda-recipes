@@ -32,6 +32,7 @@ requirements:
     - perl-graph-readwrite
     - perl-number-format
     - perl-statistics-basic
+    - perl-text-diff
     - perl-bio-featureio
 
   run:
@@ -52,6 +53,7 @@ requirements:
     - perl-graph-readwrite
     - perl-number-format
     - perl-statistics-basic
+    - perl-text-diff
     - perl-bio-featureio
 
 test:
