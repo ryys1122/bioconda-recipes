@@ -29,10 +29,8 @@ requirements:
     - perl-file-sharedir-install
     - perl-bio-db-hts
     - perl-capture-tiny
-    - perl-graph
-    - perl-graphviz
+    - perl-graph-readwrite
     - perl-number-format
-    - perl-parse-yapp
     - perl-statistics-basic
     - perl-bio-featureio
 
@@ -51,9 +49,7 @@ requirements:
     - perl-file-sharedir-install
     - perl-bio-db-hts
     - perl-capture-tiny
-    - perl-graph
-    - perl-graphviz
-    - perl-parse-yapp
+    - perl-graph-readwrite
     - perl-number-format
     - perl-statistics-basic
     - perl-bio-featureio
