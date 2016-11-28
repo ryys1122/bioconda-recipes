@@ -29,6 +29,11 @@ requirements:
     - perl-file-sharedir-install
     - perl-bio-db-hts
     - perl-capture-tiny
+    - perl-graph
+    - perl-graphviz
+    - perl-number-format
+    - perl-parse-yapp
+    - perl-statistics-basic
     - perl-bio-featureio
 
   run:
@@ -46,6 +51,11 @@ requirements:
     - perl-file-sharedir-install
     - perl-bio-db-hts
     - perl-capture-tiny
+    - perl-graph
+    - perl-graphviz
+    - perl-parse-yapp
+    - perl-number-format
+    - perl-statistics-basic
     - perl-bio-featureio
 
 test:
