@@ -13,7 +13,7 @@ cp c++/filterout-bam $PREFIX/bin
 cd perl && perl -MExtUtils::MakeMaker -e 1
 cpanm --mirror http://cpan.metacpan.org --notest -l $PREFIX --installdeps .
 
-sed -e 's#$FindBin::Bin/../lib#$FindBin::Bin/../lib/perl5#' bin/*.pl
+sed -ie 's#$FindBin::Bin/../lib#$FindBin::Bin/../lib/perl5#' bin/*.pl
 
 perl Makefile.PL INSTALL_BASE=$PREFIX && \
 make && \
